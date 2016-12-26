@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+   <!--  <script src="assets/javascript/functionlibrary.js"></script>
+    <script src="assets/javascript/starwarsgame.js"></script> -->
+    <!-- Added a link to Bootstrap-->
+ 
+    <!-- <link rel="stylesheet" href=assets/css/reset.css> -->
+    
+    <link rel="stylesheet" href="style.css">
+    <title> Ben and James game </title>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+</head>
+
+<body>
+ 
+<h1> Game </h1>
+<div id="dude">
+    <img src="raddudeedit.jpg">
+</div>
+
+
+
+
+ <script>
+   // makes player move with arrow keys
+    $(document).keyup(function(e) {
+        switch (e.which) {
+            case 37:
+                $("#dude").animate({ left: "-=50px" }, "normal");
+        }
+    });
+    $(document).keyup(function(e) {
+        switch (e.which) {
+            case 38:
+                $("#dude").animate({ top: "-=50px" }, "normal");
+        }
+    });
+
+    $(document).keyup(function(e) {
+        switch (e.which) {
+            case 39:
+                $("#dude").animate({ left: "+=50px" }, "normal");
+        }
+    });
+
+    $(document).keyup(function(e) {
+        switch (e.which) {
+            case 40:
+                $("#dude").animate({ top: "+=50px" }, "normal");
+
+        }
+    });
+
+
+</script>   
+</body>
+
+</html>

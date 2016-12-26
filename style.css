@@ -1,0 +1,17 @@
+body {
+	background-image: url(mario.png);\
+	background-repeat: repeat-x;
+	text-align: center;
+	tra
+}
+#dude{
+	position: relative;
+}
+img{
+	position: relative;
+	width: 200px;
+	height: 150px;
+	top: 135px;
+	left: -425px;
+	transform: translateX(20px);
+}
